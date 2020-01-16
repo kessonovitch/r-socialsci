@@ -1,0 +1,51 @@
+---
+title: "R_startup"
+author: "Kesson"
+date: "16/01/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Setting up for R tutorial
+
+### What you’ll need:
+This lesson assumes you have current versions of the following software installed on your computer:
+
+1.	the [R software](https://cran.r-project.org/) itself, and
+2.	[RStudio Desktop](https://rstudio.com/products/rstudio/download/)
+3.  the R package *tidyverse* (a package is a set of software tools that you use in R)
+
+Both programmes and all R packages are free. RStudio runs the R software within it, so first download R package and install it on your computer. Then download and install RStudio. For detailed instructions for Macs or PCs, see <http://brunalab.org/las6292/2019/01/23/installing-r-and-rstudio/>
+
+If you have never used R or RStudio before, I recommend going through [this tutorial](https://datacarpentry.org/r-socialsci/00-intro/index.html), it takes about 30 minutes. At the end of it you will download the package *tidyverse*
+
+If you are familiar with RStudio install *tidyverse* by entering the command into your console:
+
+`install.packages("tidyverse")`
+
+download.file("https://ndownloader.figshare.com/files/11492171",
+              "data/SAFI_clean.csv", mode = "wb")
+```{r}
+download.file("https://ndownloader.figshare.com/files/11492171",
+              "data/SAFI_clean.csv", mode = "wb")
+```
+
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
