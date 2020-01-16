@@ -1,5 +1,5 @@
 ---
-title: "R_startup"
+title: "Setting up for R tutorial"
 author: "Kesson"
 date: "16/01/2020"
 output: html_document
@@ -9,16 +9,14 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Setting up for R tutorial
-
-### What you’ll need:
+## What you’ll need:
 This lesson assumes you have current versions of the following software installed on your computer:
 
 1.	the [R software](https://cran.r-project.org/) itself, and
 2.	[RStudio Desktop](https://rstudio.com/products/rstudio/download/)
 3.  the R package *tidyverse* (a package is a set of software tools that you use in R)
 
-Both programmes and all R packages are free. RStudio runs the R software within it, so first download R package and install it on your computer. Then download and install RStudio. For detailed instructions for Macs or PCs, see <http://brunalab.org/las6292/2019/01/23/installing-r-and-rstudio/>
+Both programmes and all R packages are free. RStudio runs the R software within it, so first download R package and install it on your computer. Then download and install RStudio. For detailed instructions for Macs or PCs, see <https://datacarpentry.org/r-socialsci/setup.html>
 
 If you have never used R or RStudio before, I recommend going through [this tutorial](https://datacarpentry.org/r-socialsci/00-intro/index.html), it takes about 30 minutes. At the end of it you will download the package *tidyverse*
 
@@ -26,26 +24,35 @@ If you are familiar with RStudio install *tidyverse* by entering the command int
 
 `install.packages("tidyverse")`
 
-download.file("https://ndownloader.figshare.com/files/11492171",
-              "data/SAFI_clean.csv", mode = "wb")
-```{r}
-download.file("https://ndownloader.figshare.com/files/11492171",
-              "data/SAFI_clean.csv", mode = "wb")
-```
-
-
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
+## What we'll do
 
+On Monday we will be going through the tutorial ["Manipulating, analyzing and exporting data with tidyverse"](https://datacarpentry.org/R-ecology-lesson/03-dplyr.html) 
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+This tutorial uses an example dataset we'll call surveys. To import this dataset run the following code:
+```{r, echo=F, message=FALSE}
+library(readr)
+surveys <- read_csv("https://ndownloader.figshare.com/files/2292169")
 ```
+This will create your first R object, a dataset called "surveys". All exercises will be run on this dataset.
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## Useful stuff
+
+There are tons of free resources for learning how to use R. 
+For online resources I recommend: 
+Cheatsheets:
+The cheat sheets make it easy to learn about and use some of our favorite packages. They are published in their respective PDF versions here: <https://www.rstudio.com/resources/cheatsheets/>, some are also available in RStudio under Help-Cheatsheets.
+
+For Monday's tutorial: 
+*  [Data transformation with dplyr](https://github.com/rstudio/cheatsheets/blob/master/data-transformation.pdf)
+*  [RStudio guide](https://github.com/rstudio/cheatsheets/blob/master/rstudio-ide.pdf)
+
+As a textbook:
+[R for Data Science](https://r4ds.had.co.nz) by Hadley Wickham, the Buddah of the Tidyverse
+
+For curriculum I base tutorials around the Data/Software Carpentries:
+<https://datacarpentry.org/lessons/>
+<http://swcarpentry.github.io/r-novice-inflammation/>
