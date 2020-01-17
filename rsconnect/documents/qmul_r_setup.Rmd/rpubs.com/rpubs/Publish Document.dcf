@@ -1,0 +1,10 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/566435/c222ffc869da4616904a2ad442082c55
+bundleId: https://api.rpubs.com/api/v1/document/566435/c222ffc869da4616904a2ad442082c55
+url: http://rpubs.com/kesson/566435
+when: 1579260547.58151
