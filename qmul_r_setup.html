@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -331,6 +330,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -386,6 +386,8 @@ summary {
 <h2>What we’ll do</h2>
 <p>On Monday we will be going through the tutorial <a href="https://datacarpentry.org/R-ecology-lesson/03-dplyr.html">“Manipulating, analyzing and exporting data with tidyverse”</a></p>
 <p>This tutorial uses an example dataset we’ll call surveys. To import this dataset run the following code:</p>
+<pre class="r"><code>library(readr)
+surveys &lt;- read_csv(&quot;https://ndownloader.figshare.com/files/2292169&quot;)</code></pre>
 <p>This will create your first R object, a dataset called “surveys”. All exercises will be run on this dataset.</p>
 </div>
 <div id="useful-stuff" class="section level2">

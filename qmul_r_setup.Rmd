@@ -29,7 +29,8 @@ If you are familiar with RStudio install *tidyverse* by entering the command int
 On Monday we will be going through the tutorial ["Manipulating, analyzing and exporting data with tidyverse"](https://datacarpentry.org/R-ecology-lesson/03-dplyr.html) 
 
 This tutorial uses an example dataset we'll call surveys. To import this dataset run the following code:
-```{r, echo=F, message=FALSE}
+
+```{r, message=FALSE}
 library(readr)
 surveys <- read_csv("https://ndownloader.figshare.com/files/2292169")
 ```
