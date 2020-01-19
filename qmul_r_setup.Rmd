@@ -24,7 +24,7 @@ If you are familiar with RStudio install *tidyverse* by entering the command int
 
 `install.packages("tidyverse")`
 
-## What we'll do
+## What we'll do:
 
 On Monday we will be going through the tutorial ["Manipulating, analyzing and exporting data with tidyverse"](https://datacarpentry.org/R-ecology-lesson/03-dplyr.html) 
 
@@ -40,16 +40,20 @@ This will create your first R object, a dataset called "surveys". All exercises 
 
 There are tons of free resources for learning how to use R. 
 For online resources I recommend: 
-Cheatsheets:
+
+### *Cheatsheets*
 The cheat sheets make it easy to learn about and use some of our favorite packages. They are published in their respective PDF versions here: <https://www.rstudio.com/resources/cheatsheets/>, some are also available in RStudio under Help-Cheatsheets.
 
-For Monday's tutorial: 
-*  [Data transformation with dplyr](https://github.com/rstudio/cheatsheets/blob/master/data-transformation.pdf)
-*  [RStudio guide](https://github.com/rstudio/cheatsheets/blob/master/rstudio-ide.pdf)
+Two suggested cheatsheets for Monday's tutorial: 
 
-As a textbook:
+[Data transformation with dplyr](https://github.com/rstudio/cheatsheets/blob/master/data-transformation.pdf)
+
+[RStudio guide](https://github.com/rstudio/cheatsheets/blob/master/rstudio-ide.pdf)
+
+### *Textbook*
 [R for Data Science](https://r4ds.had.co.nz) by Hadley Wickham, the Buddah of the Tidyverse
 
-For curriculum I base tutorials around the Data/Software Carpentries:
+### *Curriculum*
+I base tutorials around the Data/Software Carpentries:
 <https://datacarpentry.org/lessons/>
 <http://swcarpentry.github.io/r-novice-inflammation/>
